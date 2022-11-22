@@ -1,92 +1,128 @@
+/* Import icon */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    /* Font cho toàn bộ trang */
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+
+}
+
+/* Bắt đầu top-nav */
 .top-nav {
-    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 0;
 }
+
 .container {
+    width: 1200px;
+    /* Kích thước của navigation */
+    height: 40px;
+    margin: 0 auto;
     display: flex;
-    width: 1300px;
-    margin: 15px auto;
-    align-items: center;
+    /* background-color: bisque; */
 }
 
-.logo {
+
+.top-nav-logo {
     width: 25%;
+    display: flex;
 }
 
-.search-box {
-    width: 40%;
-}
+    .top-nav-logo-link {
+        display: flex;
+    }
 
-.search-input{
+    img {
+        max-width: 100%;
+    }
+
+.top-nav-search-bar {
+    width: 50%;
     display: flex;
     position: relative;
-    justify-content: space-between;
-
-}
-.search-input input {
-    flex: 1 1 auto;
-    border-radius: 40px;
-    border: 0;
-    /*background-color: aqua;*/
-    height: 40px;
-    padding: 0 45px 0 15px;
-    background-color: #e5e5e5;
-
-}
-.search-button {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    font-size: 20px;
-    transform: translate(0,-50%);
-    border: none;
-    padding: 0 15px 0 0;
-    background-color: transparent;
 }
 
-.right-nav {
-    width: 35%;
+    .top-nav-search-bar-input {
+        border: 0;
+        /* Khoảng cách bên trong ô search*/
+        padding: 0 60px 0 15px;
+        flex: 1 1 auto;
+        border-radius: 8px;
+        border: 1px solid #7e7e7e;
+    }
+
+    .top-nav-search-bar-button {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #184d47;
+        font-size: 15px;
+        border: 0;
+        border-radius: 8px;
+        color: white;
+        width: 50px;
+        height: 30px;
+    }
+
+/* Icon class */
+.top-nav-right {
+    width: 25%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    /* background-color:  beige; */
+
 }
 
-.account, .wish-list, .cart{
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border: 1px solid #e7e7e7;
-    border-radius: 100%;
-    margin: 0 5px;
-}
+    /* Icon */
+    .account-icon, .heart-icon, .cart-icon {
+        /* Kích thước của icon */
+        font-size: 20px;
+        /* Khoảng cách giữa các icon */
+        margin-left:10px;
+        border: 1px solid #e5e5e5;
+        border-radius: 100%;
+        /* Muốn căn giữa border phải có 3 thuộc tính */
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
 
-ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 15px;
-}
+/* Kết thúc top-nav */
 
-a {
-    text-decoration: none;
-    color: rgba(255,255,255,1);
-}
-a:hover {
-    color: rgba(255,255,255,0.7);
-}
+/* Bắt đầu main-nav */
 .main-nav {
-    background-color: #343a40;
-    line-height: 50px;
+    background-color: #184d47;
 }
 .container-main-nav {
-    display: flex;
-    width: 1300px;
+    width: 1200px;
+    height: 40px;
     margin: 0 auto;
+    display: flex;
     align-items: center;
-    justify-content: center;
-}
+
+} 
+    /* Bỏ dấu chấm trước li và bỏ dấu gạch chân */
+    .main-nav-ul {
+        flex: 1;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-nav-ul a {
+        text-decoration: none;
+        color: white;
+    }
+
+
