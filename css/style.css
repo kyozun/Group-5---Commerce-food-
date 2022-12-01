@@ -12,16 +12,22 @@
 body {
     /* Font cho toàn bộ trang */
     font-family: 'Inter', sans-serif;
-    font-size: 15px;
-
+    font-size: 16px;
 }
+
+img {
+    max-width: 100%;
+}
+
 
 /* Bắt đầu top-nav */
 .top-nav {
     padding: 20px 0;
 }
 
-.container {
+
+
+.container-top-nav {
     width: 1200px;
     /* Kích thước của navigation */
     height: 40px;
@@ -30,19 +36,16 @@ body {
     /* background-color: bisque; */
 }
 
-
 .top-nav-logo {
     width: 25%;
     display: flex;
 }
 
-    .top-nav-logo-link {
-        display: flex;
-    }
+.top-nav-logo-link {
+    display: flex;
+}
 
-    img {
-        max-width: 100%;
-    }
+
 
 .top-nav-search-bar {
     width: 50%;
@@ -130,15 +133,161 @@ body {
         color: rgba(255,255,255,0.6);
     }
 
-.main-carousel {
-    width: 1200px;
-    margin: 0 auto;
+
+    .best-sellers .flickity-button {
+        width: 25px;
+        height: 25px;
+        background: #184D47;
+        color: white;
+    }
+
+    
+    /* ::-webkit-scrollbar { 
+        display: none; 
+    } */
+
+
+
+@media (min-width: 576px) {
+    .best-sellers .carousel-cell {
+        width: 100%;
+    }
+    
+    
 }
 
-.carousel-cell {
-  width: 100%;
-  height: 500px;
-  background-position: center center;
-  background-size: cover;
+@media (min-width: 768px) {
+    .best-sellers .carousel-cell {
+       width: 50%;
+    }
+    
 }
 
+@media (min-width: 992px) {
+    .best-sellers .carousel-cell {
+        width: 33.33%;
+    }
+    .flash-sale .carousel-cell {
+        width: calc((100%/2.043));
+        margin-right: 2%;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .best-sellers .carousel-cell {
+        width: calc((100%-24px)/2);
+        margin-right: 15px;
+        margin-left: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+   
+    
+}
+
+
+/* [class*="carousel-cell"] {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+  
+[class*="carousel-cell"]:first-child {
+margin-left: 0px;
+}
+
+[class*="carousel-cell"]:last-child {
+margin-right: 0px;
+} */
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-boder img {
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 2%;
+}
+
+/* Start Flash Sale */
+
+.swiper-button-next-flash-sale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #c3c3c3;
+    border-radius: 50%;
+}
+
+.swiper-button-prev-flash-sale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #c3c3c3;
+    border-radius: 50%;
+}
+
+
+/* End Flash Sale */
+
+
+/* Banner Middle */
+
+.banner-middle img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner-item {
+    position: relative;;
+}
+
+.banner-content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 8%;
+    transform: translate(0,-50%);
+}
+
+
+
+
+/* Start new-arrivals */
+
+
+
+.swiper-button-next-new-arrivals, .swiper-button-prev-new-arrivals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #c3c3c3;
+    border-radius: 50%;
+}
+
+
+
+/* End new-arrivals */
