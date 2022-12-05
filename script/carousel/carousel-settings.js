@@ -19,11 +19,11 @@ var swiper_best_sellers = new Swiper('.swiper-best-sellers', {
   // Optional parameters
   direction: 'horizontal',
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 15,
   speed: 150,
   loop: true,
-  touchEventsTarget: 'container',
   grabCursor: true,
+  touchEventsTarget: 'container',
   
   // If we need pagination
   pagination: {
@@ -33,8 +33,8 @@ var swiper_best_sellers = new Swiper('.swiper-best-sellers', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next-best-sellers',
+    prevEl: '.swiper-button-prev-best-sellers',
   },
 
   // And if we need scrollbar
@@ -108,19 +108,15 @@ var swiper_falsh_sale = new Swiper('.swiper-flash-sale', {
 var swiper_new_arrivals = new Swiper('.swiper-new-arrivals', {
   // Optional parameters
   direction: 'horizontal',
-  slidesPerView: 1,
-  spaceBetween: 0,
-  speed: 150,
-  loop: true,
-
-  touchEventsTarget: 'container',
-  grabCursor: true,
-  
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+  slidesPerView: 3,
+  grid: {
+    rows: 2,
   },
+  loopedSlidesLimit: false,
+  spaceBetween: 1,
+  rewind: true,
+  speed: 150,
+  touchEventsTarget: 'container',
 
   // Navigation arrows
   navigation: {
@@ -128,24 +124,24 @@ var swiper_new_arrivals = new Swiper('.swiper-new-arrivals', {
     prevEl: '.swiper-button-prev-new-arrivals',
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
   },
-
-  // Break points
-  breakpoints: {
-    576: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    992: {
-      slidesPerView: 4,
-    },
-    1200: {
-      slidesPerView: 5,
-    },
-  },
+  
+  // // Break points
+  // breakpoints: {
+  //   576: {
+  //     slidesPerView: 2,
+  //   },
+  //   768: {
+  //     slidesPerView: 3,
+  //   },
+  //   992: {
+  //     slidesPerView: 4,
+  //   },
+  //   1200: {
+  //     slidesPerView: 5,
+  //   }
+  // },
 });
