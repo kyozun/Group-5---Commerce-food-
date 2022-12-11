@@ -12,59 +12,187 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Carousel -->
 
-    <title>Lucky Food</title>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="css/FontAwesome.Pro.6.2.1/css/all.css">
 </head>
 
 <body>
-    <nav class="top-nav">
-        <div class="container-top-nav">
-            <div class="top-nav-logo">
-                <a href="#" class="top-nav-logo-link">
-                    <img src="images/logo.webp" alt="">
-                </a>
-            </div>
-
-            <div class="top-nav-search-bar">
-                <input class="top-nav-search-bar-input" type="text" name="" id="" placeholder="Search product...">
-                <button class="top-nav-search-bar-button">
-                    <i class="bi bi-search"></i>
-                </button>
-            </div>
-
-            <div class="top-nav-right">
-                <span class="account-icon">
-                    <i class="bi bi-person">
-                        <a href=""></a>
-                    </i>
-                </span>
-                <div class="heart-icon">
-                    <i class="bi bi-heart"></i>
-                </div>
-                <div class="cart-icon">
-                    <i class="bi bi-cart2"></i>
+    <header class="bg-danger">
+        <div class="container ">
+            <div class="row">
+                <div class="col-12">
+                    Visit Our Blog
                 </div>
             </div>
         </div>
-    </nav>
+    </header>
 
+    <div class="main-nav nav bg-light ">
+        <div class="container">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-1">
+                    <a href="#" class="navbar-brand d-lg-block">
+                        <img src="images/logo.webp" alt="Food Company" style="max-height: 30px;" class="d-inline-block">
 
-    <nav class="main-nav">
-        <div class="container-lg">
-            <ul class="main-nav-ul">
-                <li class="home"><a href="#">Home</a></li>
-                <li class="meats-seafood"><a href="#">Meats & Seafood</a></li>
-                <li class="beverages"><a href="#">Beverages</a></li>
-                <li class="bread-bakery"><a href="#">Bread & Bakery</a></li>
-                <li class="frozenfoods"><a href="#">Frozen Foods</a></li>
-                <li class="freshvegetrables"><a href="#">Fresh Vegetables</a></li>
-                <li class="dryfruits"><a href="#">Dry Fruits</a></li>
-                <li class="egg-dairy"><a href="#">Egg & Dairy</a></li>
-                <li class="snacks"><a href="#">Snacks</a></li>
-                <li class="pantry"><a href="#">Pantry</a></li>
-            </ul>
+                        <span class="fw-bold main-color d-block">Food for Life</span>
+                    </a>
+
+                </div>
+
+                <div class="col-lg-2">
+                    <nav class="main-nav nav navbar-expand">
+                        <div class="container d-flex align-items-center justify-content-end">
+                            <div class="d-lg-block d-none dropdown categories-dropdown">
+                                <button class="btn btn-success dropdown-toggle " data-bs-toggle="dropdown">
+                                    <!-- data-bs-display="static" -->
+                                    <i class="bi bi-grid me-1"></i>
+                                    Categories
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Fruits & Vegetables</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Cold Drinks & Juices</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Bakery & Biscuits</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Dairy, Bread & Eggs</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Snacks & Munchies</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Breakfast & Instant Food</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Chicken, Meat & Fish</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+
+                <div class="col-lg-6">
+                    <form action="#">
+                        <div class="input-search d-flex align-items-center position-relative ">
+                            <input type="search" placeholder="Search product"
+                                class="form-control flex-fill input-search">
+                            <button class="btn btn-success  position-absolute btn-top-search ">
+                                <i class="bi bi-search "></i>
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class=" top-nav-icon">
+                        <div class="notifications-icon">
+                            <a href="#" class="position-relative">
+                                <ion-icon name="notifications-outline"></ion-icon>
+                                <span
+                                    class="badge rounded-pill text-bg-success position-absolute top-0 start-100 translate-middle ">
+                                    2
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="cart-icon">
+                            <a href="#" class="position-relative">
+                                <ion-icon name="cart-outline"></ion-icon>
+                                <span
+                                    class="badge rounded-pill text-bg-success position-absolute top-0 start-100 translate-middle ">
+                                    4
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </a>
+                        </div>
+                        <!-- <div class="heart-icon">
+                            <a href="#">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </a>
+                        </div> -->
+                        <div class="account-icon">
+                            <a href="#">
+                                <ion-icon name="person-outline" data-bs-toggle="modal"
+                                    data-bs-target="#user-modal"></ion-icon>
+                            </a>
+                        </div>
+
+                        <div class="dropdown languages-dropdown">
+                            <button class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                <img src="images/flag-en.svg" alt="" style="width: 30px;">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-start">
+                                <li class="d-flex align-items-center justify-content-around">
+                                    <img src="images/flag-vn.svg" alt="" style="width: 35px;">
+                                    <span>VN</span>
+                                </li>
+                                <li class="d-flex align-items-center justify-content-around">
+                                    <span><img src="images/flag-en.svg" alt="" style="width: 35px;"></span>
+                                    <span>EN</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
-    </nav>
+    </div>
 
+
+
+
+    <div class="modal fade " id="user-modal" tabindex="-1" aria-labelledby="userModalLabel" aria-modal="true"
+        role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content p-3">
+
+                <div class="modal-header border-0 pb-0">
+                    <h3 class="fw-bold modal-title text-success " id="userModalLabel">Sign in</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body ">
+                    <form>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bolder">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter Email" required="">
+                        </div>
+
+                        <div class="mb-4">
+
+                            <div class="d-flex justify-content-between">
+                                <label for="password" class="form-label fw-bolder">Password</label>
+                                <span><i class="fa-regular fa-eye-slash"></i></span>
+                            </div>
+                            <input type="password" class="form-control" id="password" placeholder="Enter Password"
+                                required="">
+
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">Sign in</button>
+                        <div></div>
+                    </form>
+                </div>
+
+                <div class="modal-footer border-0 justify-content-center pt-0">
+                    <a href="#">Forgot password?</a> or <a href="#">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div class="top-carousel mt-3 ">
@@ -72,27 +200,39 @@
             <div class="swiper swiper-top rounded ">
                 <div class="swiper-wrapper ">
                     <div class="swiper-slide ">
-                        <!-- <img src="images/top-carousel-7.webp" alt="" class=""> -->
+                        <img src="images/slider_image_1.webp" alt="" class="">
+                    </div>
+                    <div class="swiper-slide ">
+                        <img src="images/slider_image_1.webp" alt="" class="">
+                    </div>
+                    <div class="swiper-slide ">
+                        <img src="images/slider_image_1.webp" alt="" class="">
+                    </div>
+                    <div class="swiper-slide ">
+                        <img src="images/slider_image_1.webp" alt="" class="">
                     </div>
 
                 </div>
                 <div class="swiper-button-next-top"></div>
                 <div class="swiper-button-prev-top"></div>
+
+
             </div>
+            <div class="swiper-pagination-top text-center"></div>
         </div>
     </div>
 
     <!-- Banner top -->
     <div class="banner-top mt-3">
         <div class="container ">
-            <div class="grid gap-3">
-                <div class="g-col-sm-1 g-col-md-6 rounded">
+            <div class="row gx-3 gy-2">
+                <div class="col-sm-6 rounded">
                     <a href="#" class="">
                         <img src="images/img1_banner1_mixy1.webp" class="w-100" alt="">
                     </a>
                 </div>
 
-                <div class="g-col-sm-1 g-col-md-6 rounded">
+                <div class="col-sm-6 rounded">
                     <a href="#" class="">
                         <img src="images/img1_banner1_mixy2.webp" class="w-100" alt="">
                     </a>
@@ -125,11 +265,11 @@
             <div class="swiper swiper-flash-sale">
                 <div class="swiper-wrapper ">
                     <div class="swiper-slide border text-center">
-                        <div class="grid align-items-center justify-content-center">
-                            <div class="g-col-4  ">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-4  ">
                                 <img src="images/flash-sale-1.webp" class="" alt="">
                             </div>
-                            <div class="g-col-8 p-3">
+                            <div class="col-8 p-3">
                                 <h5>Organic Coconut</h5>
                                 <h5>$20</h5>
                                 <p>Hurry up!</p>
@@ -138,11 +278,11 @@
                         </div>
                     </div>
                     <div class="swiper-slide border text-center">
-                        <div class="grid align-items-center justify-content-center">
-                            <div class="g-col-4  ">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-4  ">
                                 <img src="images/flash-sale-1.webp" class="" alt="">
                             </div>
-                            <div class="g-col-8 p-3">
+                            <div class="col-8 p-3">
                                 <h5>Organic Coconut</h5>
                                 <h5>$20</h5>
                                 <p>Hurry up!</p>
@@ -151,11 +291,24 @@
                         </div>
                     </div>
                     <div class="swiper-slide border text-center">
-                        <div class="grid align-items-center justify-content-center">
-                            <div class="g-col-4  ">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-4  ">
                                 <img src="images/flash-sale-1.webp" class="" alt="">
                             </div>
-                            <div class="g-col-8 p-3">
+                            <div class="col-8 p-3">
+                                <h5>Organic Coconut</h5>
+                                <h5>$20</h5>
+                                <p>Hurry up!</p>
+                                <small>09:09:09</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide border text-center">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-4  ">
+                                <img src="images/flash-sale-1.webp" class="" alt="">
+                            </div>
+                            <div class="col-8 p-3">
                                 <h5>Organic Coconut</h5>
                                 <h5>$20</h5>
                                 <p>Hurry up!</p>
@@ -164,7 +317,8 @@
                         </div>
                     </div>
 
-                    
+
+
                 </div>
             </div>
 
@@ -193,17 +347,21 @@
             <div class="swiper swiper-best-sellers ">
                 <div class="swiper-wrapper ">
                     <div class="swiper-slide border p-1 rounded-3">
-                        <div class="single-product ">
+                        <div class="single-product">
                             <div class="single-product-image">
-                                <img src="images/best-seller-1.webp" alt="">
+                                <a href="#">
+                                    <img src="images/best-seller-1.webp" alt="">
+                                </a>
+
                             </div>
+
                             <div class="group-btn d-flex justify-content-between flex-column">
                                 <div class="btn-add-to-wish-list">
                                     <a href="#">
                                         <i class="bi bi-heart"></i>
                                     </a>
                                 </div>
-                                <div class="btn-quick-view ">
+                                <div class="btn-quick-view">
                                     <a href="#">
                                         <i class="bi bi-eye"></i>
                                     </a>
@@ -214,9 +372,10 @@
                                     </a>
                                 </div>
                             </div>
+
                             <div class="single-product-content text-center">
                                 <div class="single-product-item-title">
-                                    <span>Fresh organic kiwi</span>
+                                    <span class="h6">Fresh organic kiwi</span>
                                 </div>
                                 <div class="single-product-item-stars-rating">
                                     <i class="bi bi-star-fill star-yellow"></i>
@@ -227,7 +386,7 @@
 
                                 </div>
                                 <div class="single-product-item-price">
-                                    <span class="h6 fw-bold">$10</span>
+                                    <span class="h6">$10</span>
                                 </div>
                             </div>
                         </div>
@@ -235,15 +394,19 @@
                     <div class="swiper-slide border p-1 rounded-3">
                         <div class="single-product">
                             <div class="single-product-image">
-                                <img src="images/best-seller-1.webp" alt="">
+                                <a href="#">
+                                    <img src="images/best-seller-1.webp" alt="">
+                                </a>
+
                             </div>
+
                             <div class="group-btn d-flex justify-content-between flex-column">
                                 <div class="btn-add-to-wish-list">
                                     <a href="#">
                                         <i class="bi bi-heart"></i>
                                     </a>
                                 </div>
-                                <div class="btn-quick-view ">
+                                <div class="btn-quick-view">
                                     <a href="#">
                                         <i class="bi bi-eye"></i>
                                     </a>
@@ -254,9 +417,10 @@
                                     </a>
                                 </div>
                             </div>
+
                             <div class="single-product-content text-center">
                                 <div class="single-product-item-title">
-                                    <span>Fresh organic kiwi</span>
+                                    <span class="h6">Fresh organic kiwi</span>
                                 </div>
                                 <div class="single-product-item-stars-rating">
                                     <i class="bi bi-star-fill star-yellow"></i>
@@ -267,9 +431,233 @@
 
                                 </div>
                                 <div class="single-product-item-price">
-                                    <span class="h6 fw-bold">$10</span>
+                                    <span class="h6">$10</span>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide border p-1 rounded-3">
+                        <div class="single-product">
+                            <div class="single-product-image">
+                                <a href="#">
+                                    <img src="images/best-seller-1.webp" alt="">
+                                </a>
 
+                            </div>
+
+                            <div class="group-btn d-flex justify-content-between flex-column">
+                                <div class="btn-add-to-wish-list">
+                                    <a href="#">
+                                        <i class="bi bi-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="btn-quick-view">
+                                    <a href="#">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                </div>
+                                <div class="btn-add-to-cart">
+                                    <a href="#">
+                                        <i class="bi bi-bag-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="single-product-content text-center">
+                                <div class="single-product-item-title">
+                                    <span class="h6">Fresh organic kiwi</span>
+                                </div>
+                                <div class="single-product-item-stars-rating">
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-gray"></i>
+
+                                </div>
+                                <div class="single-product-item-price">
+                                    <span class="h6">$10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide border p-1 rounded-3">
+                        <div class="single-product">
+                            <div class="single-product-image">
+                                <a href="#">
+                                    <img src="images/best-seller-1.webp" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="group-btn d-flex justify-content-between flex-column">
+                                <div class="btn-add-to-wish-list">
+                                    <a href="#">
+                                        <i class="bi bi-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="btn-quick-view">
+                                    <a href="#">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                </div>
+                                <div class="btn-add-to-cart">
+                                    <a href="#">
+                                        <i class="bi bi-bag-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="single-product-content text-center">
+                                <div class="single-product-item-title">
+                                    <span class="h6">Fresh organic kiwi</span>
+                                </div>
+                                <div class="single-product-item-stars-rating">
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-gray"></i>
+
+                                </div>
+                                <div class="single-product-item-price">
+                                    <span class="h6">$10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide border p-1 rounded-3">
+                        <div class="single-product">
+                            <div class="single-product-image">
+                                <a href="#">
+                                    <img src="images/best-seller-1.webp" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="group-btn d-flex justify-content-between flex-column">
+                                <div class="btn-add-to-wish-list">
+                                    <a href="#">
+                                        <i class="bi bi-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="btn-quick-view">
+                                    <a href="#">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                </div>
+                                <div class="btn-add-to-cart">
+                                    <a href="#">
+                                        <i class="bi bi-bag-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="single-product-content text-center">
+                                <div class="single-product-item-title">
+                                    <span class="h6">Fresh organic kiwi</span>
+                                </div>
+                                <div class="single-product-item-stars-rating">
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-gray"></i>
+
+                                </div>
+                                <div class="single-product-item-price">
+                                    <span class="h6">$10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide border p-1 rounded-3">
+                        <div class="single-product">
+                            <div class="single-product-image">
+                                <a href="#">
+                                    <img src="images/best-seller-1.webp" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="group-btn d-flex justify-content-between flex-column">
+                                <div class="btn-add-to-wish-list">
+                                    <a href="#">
+                                        <i class="bi bi-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="btn-quick-view">
+                                    <a href="#">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                </div>
+                                <div class="btn-add-to-cart">
+                                    <a href="#">
+                                        <i class="bi bi-bag-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="single-product-content text-center">
+                                <div class="single-product-item-title">
+                                    <span class="h6">Fresh organic kiwi</span>
+                                </div>
+                                <div class="single-product-item-stars-rating">
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-gray"></i>
+
+                                </div>
+                                <div class="single-product-item-price">
+                                    <span class="h6">$10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide border p-1 rounded-3">
+                        <div class="single-product">
+                            <div class="single-product-image">
+                                <a href="#">
+                                    <img src="images/best-seller-1.webp" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="group-btn d-flex justify-content-between flex-column">
+                                <div class="btn-add-to-wish-list">
+                                    <a href="#">
+                                        <i class="bi bi-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="btn-quick-view">
+                                    <a href="#">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                </div>
+                                <div class="btn-add-to-cart">
+                                    <a href="#">
+                                        <i class="bi bi-bag-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="single-product-content text-center">
+                                <div class="single-product-item-title">
+                                    <span class="h6">Fresh organic kiwi</span>
+                                </div>
+                                <div class="single-product-item-stars-rating">
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-yellow"></i>
+                                    <i class="bi bi-star-fill star-gray"></i>
+
+                                </div>
+                                <div class="single-product-item-price">
+                                    <span class="h6">$10</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -281,10 +669,10 @@
     </div>
 
     <!-- Banner Middle -->
-    <div class="banner-middle mt-3">
+    <div class="banner-middle-section mt-3">
         <div class="container ">
-            <div class="grid">
-                <div class="g-col-sm-1 g-col-md-6 g-col-lg-4">
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-4">
                     <div class="banner-item">
                         <div class="banner-image">
                             <img src="images/banner-middle-1.webp" alt="">
@@ -296,7 +684,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="g-col-sm-1 g-col-md-6 g-col-lg-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="banner-item">
                         <div class="banner-image">
                             <img src="images/banner-middle-1.webp" alt="">
@@ -308,7 +696,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="g-col-sm-1 g-col-md-12 g-col-lg-4">
+                <div class="col-md-12 col-lg-4">
                     <div class="banner-item">
                         <div class="banner-image">
                             <img src="images/banner-middle-1.webp" alt="">
@@ -320,196 +708,229 @@
                         </div>
                     </div>
                 </div>
-                
+
+
             </div>
         </div>
     </div>
 
     <!-- New Arrivals -->
     <div class="new-arrivals-section">
-        <div class="container">
-            <div class="new-arrivals-header d-flex justify-content-between mt-3 mb-3 p-2 rounded">
+        <div class="container ">
+            <div class="new-arrivals-header d-flex justify-content-between mt-3 mb-3 rounded">
                 <div class="new-arrivals-title d-flex align-items-center">
                     <i class="bi bi-stars me-2"></i>
-                    <h4 class=" m-0 ">New Arrivals</h4>
+                    <h4 class="m-0 ">New Arrivals</h4>
                 </div>
 
             </div>
-            <div class="new-arrivals-products grid">
-                <div class="single-product g-col-sm-6 g-col-md-4 g-col-lg-2">
-                    <div class="single-product-image">
-                        <img src="images/best-seller-1.webp" alt="">
+            <div class="new-arrivals-products row g-3">
+                <div class="col-6 col-md-3 col-lg-2 ">
+                    <div class="single-product border ">
+                        <div class="single-product-image rounded">
+                            <a href="#">
+                                <img src="images/best-seller-1.webp" alt="">
+                            </a>
+                        </div>
+
+                        <div class="group-btn-action d-flex justify-content-center">
+                            <a href="#" class="btn-action d-flex justify-content-center align-items-center">
+                                <i class="bi bi-heart"></i>
+                            </a>
+                            <a href="#" class="btn-action d-flex justify-content-center align-items-center">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a href="#" class="btn-action d-flex justify-content-center align-items-center ">
+                                <i class="bi bi-bag-plus"></i>
+                            </a>
+                        </div>
+
+                        <div class="single-product-content text-center">
+                            <div class="single-product-item-title">
+                                <span>Fresh organic kiwi</span>
+                            </div>
+                            <div class="single-product-item-price">
+                                <span class="h6 fw-bold">$5</span>
+                                <span class="text-decoration-line-through text-muted">$10</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="group-btn-action d-flex justify-content-center">
-                        <a href="#" class="btn-action d-flex justify-content-center align-items-center" >
-                            <i class="bi bi-heart"></i>
-                        </a>
-                        <a href="#" class="btn-action d-flex justify-content-center align-items-center">
-                            <i class="bi bi-eye"></i>
-                        </a>
-                        <a href="#" class="btn-action d-flex justify-content-center align-items-center ">
-                            <i class="bi bi-bag-plus"></i>
-                        </a>
-                    </div>
-
-                    <div class="single-product-content text-center">
-                        <div class="single-product-item-title">
-                            <p class="mb-0">Fresh organic kiwi</p>
-                        </div>
-                        <div class="single-product-item-price">
-                            <span class="h6 fw-bold">$5</span>
-                            <span class="text-decoration-line-through text-muted">$10</span>
-                        </div>
-                    </div>
                 </div>
-                <div class="single-product g-col-sm-6 g-col-md-4 g-col-lg-2">
-                    <div class="single-product-image">
-                        <img src="images/best-seller-1.webp" alt="">
+                <div class="col-6 col-md-3 col-lg-2 ">
+                    <div class="single-product border">
+                        <div class="single-product-image ">
+                            <a href="#">
+                                <img src="images/best-seller-1.webp" alt="">
+                            </a>
+                        </div>
+
+                        <div class="group-btn-action d-flex justify-content-center">
+                            <a href="#" class="btn-action d-flex justify-content-center align-items-center">
+                                <i class="bi bi-heart"></i>
+                            </a>
+                            <a href="#" class="btn-action d-flex justify-content-center align-items-center">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a href="#" class="btn-action d-flex justify-content-center align-items-center ">
+                                <i class="bi bi-bag-plus"></i>
+                            </a>
+                        </div>
+
+                        <div class="single-product-content text-center">
+                            <div class="single-product-item-title">
+                                <span>Fresh organic kiwi</span>
+                            </div>
+                            <div class="single-product-item-price">
+                                <span class="h6 fw-bold">$5</span>
+                                <span class="text-decoration-line-through text-muted">$10</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="group-btn-action d-flex justify-content-center">
-                        <a href="#" class="btn-action d-flex justify-content-center align-items-center" >
-                            <i class="bi bi-heart"></i>
-                        </a>
-                        <a href="#" class="btn-action d-flex justify-content-center align-items-center">
-                            <i class="bi bi-eye"></i>
-                        </a>
-                        <a href="#" class="btn-action d-flex justify-content-center align-items-center ">
-                            <i class="bi bi-bag-plus"></i>
-                        </a>
-                    </div>
-
-                    <div class="single-product-content text-center">
-                        <div class="single-product-item-title">
-                            <p class="mb-0">Fresh organic kiwi</p>
-                        </div>
-                        <div class="single-product-item-price">
-                            <span class="h6 fw-bold">$5</span>
-                            <span class="text-decoration-line-through text-muted">$10</span>
-                        </div>
-                    </div>
                 </div>
-                <div class="single-product g-col-sm-6 g-col-md-4 g-col-lg-2">
-                    <div class="single-product-image">
-                        <img src="images/best-seller-1.webp" alt="">
+                <div class="col-6 col-md-3 col-lg-2 ">
+                    <div class="single-product border">
+                        <div class="single-product-image ">
+                            <a href="#">
+                                <img src="images/best-seller-1.webp" alt="">
+                            </a>
+                        </div>
+
+                        <div class="group-btn-action d-flex justify-content-center">
+                            <a href="#" class="btn-action d-flex justify-content-center align-items-center">
+                                <i class="bi bi-heart"></i>
+                            </a>
+                            <a href="#" class="btn-action d-flex justify-content-center align-items-center">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a href="#" class="btn-action d-flex justify-content-center align-items-center ">
+                                <i class="bi bi-bag-plus"></i>
+                            </a>
+                        </div>
+
+                        <div class="single-product-content text-center">
+                            <div class="single-product-item-title">
+                                <span>Fresh organic kiwi</span>
+                            </div>
+                            <div class="single-product-item-price">
+                                <span class="h6 fw-bold">$5</span>
+                                <span class="text-decoration-line-through text-muted">$10</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="group-btn-action d-flex justify-content-center">
-                        <a href="#" class="btn-action d-flex justify-content-center align-items-center" >
-                            <i class="bi bi-heart"></i>
-                        </a>
-                        <a href="#" class="btn-action d-flex justify-content-center align-items-center">
-                            <i class="bi bi-eye"></i>
-                        </a>
-                        <a href="#" class="btn-action d-flex justify-content-center align-items-center ">
-                            <i class="bi bi-bag-plus"></i>
-                        </a>
-                    </div>
-
-                    <div class="single-product-content text-center">
-                        <div class="single-product-item-title">
-                            <p class="mb-0">Fresh organic kiwi</p>
-                        </div>
-                        <div class="single-product-item-price">
-                            <span class="h6 fw-bold">$5</span>
-                            <span class="text-decoration-line-through text-muted">$10</span>
-                        </div>
-                    </div>
                 </div>
-                <div class="single-product g-col-sm-6 g-col-md-4 g-col-lg-2">
-                    <div class="single-product-image">
-                        <img src="images/best-seller-1.webp" alt="">
+                <div class="col-6 col-md-3 col-lg-2 ">
+                    <div class="single-product border">
+                        <div class="single-product-image ">
+                            <a href="#">
+                                <img src="images/best-seller-1.webp" alt="">
+                            </a>
+                        </div>
+
+                        <div class="group-btn-action d-flex justify-content-center">
+                            <a href="#" class="btn-action d-flex justify-content-center align-items-center">
+                                <i class="bi bi-heart"></i>
+                            </a>
+                            <a href="#" class="btn-action d-flex justify-content-center align-items-center">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a href="#" class="btn-action d-flex justify-content-center align-items-center ">
+                                <i class="bi bi-bag-plus"></i>
+                            </a>
+                        </div>
+
+                        <div class="single-product-content text-center">
+                            <div class="single-product-item-title">
+                                <span>Fresh organic kiwi</span>
+                            </div>
+                            <div class="single-product-item-price">
+                                <span class="h6 fw-bold">$5</span>
+                                <span class="text-decoration-line-through text-muted">$10</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="group-btn-action d-flex justify-content-center">
-                        <a href="#" class="btn-action d-flex justify-content-center align-items-center" >
-                            <i class="bi bi-heart"></i>
-                        </a>
-                        <a href="#" class="btn-action d-flex justify-content-center align-items-center">
-                            <i class="bi bi-eye"></i>
-                        </a>
-                        <a href="#" class="btn-action d-flex justify-content-center align-items-center ">
-                            <i class="bi bi-bag-plus"></i>
-                        </a>
-                    </div>
-
-                    <div class="single-product-content text-center">
-                        <div class="single-product-item-title">
-                            <p class="mb-0">Fresh organic kiwi</p>
-                        </div>
-                        <div class="single-product-item-price">
-                            <span class="h6 fw-bold">$5</span>
-                            <span class="text-decoration-line-through text-muted">$10</span>
-                        </div>
-                    </div>
                 </div>
-                <div class="single-product g-col-sm-6 g-col-md-4 g-col-lg-2">
-                    <div class="single-product-image">
-                        <img src="images/best-seller-1.webp" alt="">
+                <div class="col-6 col-md-3 col-lg-2 ">
+                    <div class="single-product border">
+                        <div class="single-product-image ">
+                            <a href="#">
+                                <img src="images/best-seller-1.webp" alt="">
+                            </a>
+                        </div>
+
+                        <div class="group-btn-action d-flex justify-content-center">
+                            <a href="#" class="btn-action d-flex justify-content-center align-items-center">
+                                <i class="bi bi-heart"></i>
+                            </a>
+                            <a href="#" class="btn-action d-flex justify-content-center align-items-center">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a href="#" class="btn-action d-flex justify-content-center align-items-center ">
+                                <i class="bi bi-bag-plus"></i>
+                            </a>
+                        </div>
+
+                        <div class="single-product-content text-center">
+                            <div class="single-product-item-title">
+                                <span>Fresh organic kiwi</span>
+                            </div>
+                            <div class="single-product-item-price">
+                                <span class="h6 fw-bold">$5</span>
+                                <span class="text-decoration-line-through text-muted">$10</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="group-btn-action d-flex justify-content-center">
-                        <a href="#" class="btn-action d-flex justify-content-center align-items-center" >
-                            <i class="bi bi-heart"></i>
-                        </a>
-                        <a href="#" class="btn-action d-flex justify-content-center align-items-center">
-                            <i class="bi bi-eye"></i>
-                        </a>
-                        <a href="#" class="btn-action d-flex justify-content-center align-items-center ">
-                            <i class="bi bi-bag-plus"></i>
-                        </a>
-                    </div>
-
-                    <div class="single-product-content text-center">
-                        <div class="single-product-item-title">
-                            <p class="mb-0">Fresh organic kiwi</p>
-                        </div>
-                        <div class="single-product-item-price">
-                            <span class="h6 fw-bold">$5</span>
-                            <span class="text-decoration-line-through text-muted">$10</span>
-                        </div>
-                    </div>
                 </div>
-                <div class="single-product g-col-sm-6 g-col-md-4 g-col-lg-2">
-                    <div class="single-product-image">
-                        <img src="images/best-seller-1.webp" alt="">
+                <div class="col-6 col-md-3 col-lg-2 ">
+                    <div class="single-product border  ">
+                        <div class="single-product-image ">
+                            <a href="#">
+                                <img src="images/best-seller-1.webp" alt="">
+                            </a>
+                        </div>
+
+                        <div class="group-btn-action d-flex justify-content-center">
+                            <a href="#" class="btn-action d-flex justify-content-center align-items-center">
+                                <i class="bi bi-heart"></i>
+                            </a>
+                            <a href="#" class="btn-action d-flex justify-content-center align-items-center">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a href="#" class="btn-action d-flex justify-content-center align-items-center ">
+                                <i class="bi bi-bag-plus"></i>
+                            </a>
+                        </div>
+
+                        <div class="single-product-content text-center">
+                            <div class="single-product-item-title">
+                                <span>Fresh organic kiwi</span>
+                            </div>
+                            <div class="single-product-item-price">
+                                <span class="h6 fw-bold">$5</span>
+                                <span class="text-decoration-line-through text-muted">$10</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="group-btn-action d-flex justify-content-center">
-                        <a href="#" class="btn-action d-flex justify-content-center align-items-center" >
-                            <i class="bi bi-heart"></i>
-                        </a>
-                        <a href="#" class="btn-action d-flex justify-content-center align-items-center">
-                            <i class="bi bi-eye"></i>
-                        </a>
-                        <a href="#" class="btn-action d-flex justify-content-center align-items-center ">
-                            <i class="bi bi-bag-plus"></i>
-                        </a>
-                    </div>
-
-                    <div class="single-product-content text-center">
-                        <div class="single-product-item-title">
-                            <p class="mb-0">Fresh organic kiwi</p>
-                        </div>
-                        <div class="single-product-item-price">
-                            <span class="h6 fw-bold">$5</span>
-                            <span class="text-decoration-line-through text-muted">$10</span>
-                        </div>
-                    </div>
                 </div>
-              
+
+
+
 
             </div>
-                        
-            <div class="d-flex justify-content-center btn-xem-them">
-                <button class="btn btn-outline-success fw-bold">Xem Thêm</button>
-            </div>       
-            
-                    
-                    
-               
-           
+
+            <div class="d-flex justify-content-center btn-load-more mt-3">
+                <button class="btn btn-outline-success fw-bold">Load More</button>
+            </div>
+
+
+
+
+
 
         </div>
     </div>
@@ -518,79 +939,380 @@
     <!-- Popular Categories -->
     <div class="popular-categories-section">
         <div class="container">
-            <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 m-0 ">
-               
-                <div class="col p-0">
-                    <img src="images/Categories_banner.jpg" alt=""
-                        style="background:url(assets/images/banner/banner-deal.jpg)no-repeat; background-size: cover; height: 300px;"
-                        class="">
+            <div class="popular-categories-header mt-3 mb-3">
+                <div class="popular-categories-title d-flex align-items-center">
+                    <i class="bi bi-ui-checks-grid me-2"></i>
+                    <h4 class="mb-0">Popular Categories</h4>
+                </div>
+            </div>
+            <div class="popular-categories-content">
+                <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-5 row-cols-1 text-center g-0">
+                    <div class="col  custom-margin border">
+                        <img src="images/Categories_banner.jpg" class="img-fluid h-100">
+                    </div>
+
+                    <div class="col ">
+                        <div class="row align-items-center border g-0 custom-margin">
+                            <div class="col-4 p-2">
+                                <div class="categories-image">
+                                    <a href="#">
+                                        <img src="images/Categories_bread_bakery.webp" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-8 p-2">
+                                <span class="">
+                                    <a href="#">Fresh Vegetables</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row align-items-center border g-0 custom-margin">
+                            <div class="col-4 p-2">
+                                <div class="categories-image">
+                                    <a href="#">
+                                        <img src="images/Categories_bread_bakery.webp" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-8 p-2">
+                                <span class="">
+                                    <a href="#">Fresh Vegetables</a>
+                                </span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col ">
+                        <div class="row align-items-center border g-0 custom-margin">
+                            <div class="col-4 p-2">
+                                <div class="categories-image">
+                                    <a href="#">
+                                        <img src="images/Categories_bread_bakery.webp" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-8 p-2">
+                                <span class="">
+                                    <a href="#">Fresh Vegetables</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row align-items-center border g-0 custom-margin">
+                            <div class="col-4 p-2">
+                                <div class="categories-image">
+                                    <a href="#">
+                                        <img src="images/Categories_bread_bakery.webp" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-8 p-2">
+                                <span class="">
+                                    <a href="#">Fresh Vegetables</a>
+                                </span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col ">
+                        <div class="row align-items-center border g-0 custom-margin">
+                            <div class="col-4 p-2">
+                                <div class="categories-image">
+                                    <a href="#">
+                                        <img src="images/Categories_bread_bakery.webp" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-8 p-2">
+                                <span class="">
+                                    <a href="#">Fresh Vegetables</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row align-items-center border g-0 custom-margin">
+                            <div class="col-4 p-2">
+                                <div class="categories-image">
+                                    <a href="#">
+                                        <img src="images/Categories_bread_bakery.webp" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-8 p-2">
+                                <span class="">
+                                    <a href="#">Fresh Vegetables</a>
+                                </span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col ">
+                        <div class="row align-items-center border g-0 custom-margin">
+                            <div class="col-4 p-2">
+                                <div class="categories-image">
+                                    <a href="#">
+                                        <img src="images/Categories_bread_bakery.webp" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-8 p-2">
+                                <span class="">
+                                    <a href="#">Fresh Vegetables</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row align-items-center border g-0 custom-margin">
+                            <div class="col-4 p-2">
+                                <div class="categories-image">
+                                    <a href="#">
+                                        <img src="images/Categories_bread_bakery.webp" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-8 p-2">
+                                <span class="">
+                                    <a href="#">Fresh Vegetables</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Popular Categories -->
+
+    <!-- Newsletter -->
+    <section class="newsletter-section ">
+        <div class="container ">
+            <div class="row newsletter-container align-items-center justify-content-between">
+                <div class="col-lg-6 p-3">
+                    <div class="newsletter-header ">
+                        <div class="newsletter-title d-flex align-items-center">
+                            <div class="newsletter-icons newsletter-icon me-3">
+                                <ion-icon name="mail-open-outline"></ion-icon>
+                            </div>
+                            <div class="newsletter-content ">
+                                <span class="h5 d-block mb-0 fw-bold">Subscribe To Our Newsletter</span>
+                                <span class="p d-block mb-0">Enter your email to <strong>get 50% off</strong> for first
+                                    order</span>
+                            </div>
+                        </div>
+
+                        <div class="form-newsletter d-flex">
+                            <form action="#" class="flex-fill position-relative">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <i class="fa-light fa-envelope newsletter-input-icon"></i>
+                                    <input type="email" placeholder="Your Email" class="form-control subscribe-input"
+                                        required>
+
+                                    <button class="btn button-subscribe fw-bold" type="submit">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="col p-0 ">
-                    <div class="row g-0 align-items-center h-50 p-3 border">
-                        <div class="col-5 ">
-                            <div class="categories-image">
+
+                <div class="col-lg-6 d-lg-block d-none text-end">
+                    <div class="img-newsletter">
+                        <img src="images/newsletter-images.png" alt="" class="w-75">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slogan-section">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-lg-3">
+                    <div class=" slogan-content">
+                        <div class="slogan-icon">
+                            <i class="fa-regular fa-truck-fast"></i>
+                        </div>
+                        <div class="slogan-title">
+                            <span class="">Free shipping for first order</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="slogan-content">
+                        <div class="slogan-icon">
+                            <i class="fa-regular fa-hand-holding-seedling"></i>
+                        </div>
+                        <div class="slogan-title">
+                            <span class="">Always fresh foods every day</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="slogan-content">
+                        <div class="slogan-icon">
+                            <i class="fa-regular fa-money-bill-wave"></i>
+                        </div>
+                        <div class="slogan-title">
+                            <span class="">Best price on the market</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="slogan-content">
+                        <div class="slogan-icon">
+                            <i class="fa-regular fa-phone-volume"></i>
+                        </div>
+                        <div class="slogan-title">
+                            <span class="">Ready to support 24/7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-section">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-6">
+                        <h6 class="footer-menu-title">CATEGORIES</h6>
+                        <div class="Categories-list ">
+                            <div class="footer-item">
+                                <a href="#">Fruit & Vegetables</a>
+                            </div>
+                            <div class="footer-item">
+                                <a href="#">Breakfast & Dairy</a>
+                            </div>
+                            <div class="footer-item">
+                                <a href="#">Meat & Seafood</a>
+                            </div>
+                            <div class="footer-item">
+                                <a href="#">Beverages</a>
+                            </div>
+                            <div class="footer-item">
+                                <a href="#">Breads & Bakery</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <h6 class="footer-menu-title">FOR CUSTOMERS</h6>
+                        <div class="Categories-lists">
+                            <div class="footer-item">
+                                <a href="#">Register/Sign up</a>
+                            </div>
+                            <div class="footer-item">
+                                <a href="#">Account</a>
+                            </div>
+                            <div class="footer-item">
+                                <a href="#">Cart</a>
+                            </div>
+                            <div class="footer-item">
+                                <a href="#">Checkout</a>
+                            </div>
+                            <div class="footer-item">
+                                <a href="#">Payments</a>
+                            </div>
+
+                            <div class="footer-item">
+                                <a href="#">Shipping</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <h6 class="footer-menu-title">ABOUT AJINA</h6>
+                        <div class="Categories-lists">
+                            <div class="footer-item">
+                                <a href="#">About Us</a>
+                            </div>
+                            <div class="footer-item">
+                                <a href="#">Blog</a>
+                            </div>
+                            <div class="footer-item">
+                                <a href="#">Privacy Policy</a>
+                            </div>
+                        </div>
+                        <h6 class="mt-3 mb-2">Payment Partners</h6>
+
+                        <div class="row mt-3 g-0">
+                            <div class="col-2 d-flex align-items-center justify-content-end ">
+                                <div class="payment-img">
+                                    <img src="images/icon-vnpay.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-end">
+                                <div class="payment-img">
+                                    <img src="images/icon-samsungpay.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-end">
+                                <div class="payment-img">
+                                    <img src="images/icon-momopay.png" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <h6 class="footer-menu-title">APP DOWNLOAD</h6>
+                        <p class="mb-2">Get free shipping & coupons</p>
+
+                        <div class="d-flex align-items-center">
+                            <div class=" me-2">
                                 <a href="#">
-                                    <i class="bi bi-stars"></i>
-                                    <img src="images/Categories_bread_bakery.webp" alt="">
+                                    <img src="images/icon-apple-store.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="">
+                                <a href="#">
+                                    <img src="images/icon-google-play.webp" alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-7 text-start p-3">
-                            <h6 class="mb-0">
-                                <a href="#">Fresh Vegetables</a>
-                            </h6>
-                        </div>
-                    </div>
 
-                    <div class="row g-0 align-items-center h-50 p-3 border">
-                        <div class="col-5 ">
-                            <div class="categories-image">
-                                <a href="#">
-                                    <img src="images/Categories_bread_bakery.webp" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-7 text-start p-3">
-                            <h6 class="mb-0">
-                                <a href="#">Fresh Vegetables</a>
-                            </h6>
-                        </div>
-                    </div>
+                        <p class="mt-3 mb-2">Follow us on</p>
 
-                   
-                
-                
-                
-                      
-                
-                
-                
+                        <div class="follow-us-icon">
+                            <a href="#">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-square-instagram"></i></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube "></i></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-tiktok"></i></i>
+                            </a>
+                        </div>
+
+
+
+                    </div>
+                </div>
 
             </div>
         </div>
-    </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copy-right-content d-flex align-items-center">
+                    <p class="mb-0">Copyright © 2022 </p>
+                </div>
+            </div>
+        </div>
 
-    <div class="container">
-        <div class="grid gap-1">
-            <div class="g-col-sm-1  bg-light ">Column 1</div>
-          
-            <div class="g-col-sm-1  bg-light ">Column 2</div>
-          
-            <div class="g-col-sm-1  bg-light">Column 3</div>
-          
-            <div class="g-col-sm-1  bg-light">Column 4</div>
-          
-            <div class="g-col-sm-1  bg-light">Column 5</div>
-            <div class="g-col-sm-1  bg-light">Column 5</div>
+    </footer>
 
-          </div>
-    
-    </div>
-    
-    <br>
-    <br>
-    <br>
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
@@ -600,6 +1322,10 @@
     <script src="script/carousel/swiper-bundle.min.js"></script>
     <script src="script/carousel/carousel-settings.js"></script>
 
+
+    <!-- Ionic -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

@@ -264,6 +264,7 @@
   border-radius: 50%;
   color: rgb(39, 39, 39);
   font-weight: 1000;
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0, 0, 0, 0.1);
 }
 .swiper-button-next-top.swiper-button-disabled,
 .swiper-button-prev-top.swiper-button-disabled {
@@ -293,7 +294,7 @@
   /* Custom */
   position: relative;
   left: -1px;
-  font-size: 15px;
+  font-size: 1rem;
 }
 .swiper-button-next-top:after {
   font-family: swiper-icons;
@@ -306,7 +307,7 @@
   /* Custom */
   position: relative;
   right: -1px;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 /* Custom hover */
@@ -419,7 +420,11 @@ button.swiper-pagination-bullet {
 }
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
-  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  /* background: var(--swiper-pagination-color, var(--swiper-theme-color)); */
+  background: #179957;
+
+  transform: scale(1.5);
+  transition: all 0.3s ease 0s;
 }
 .swiper-pagination-vertical.swiper-pagination-bullets,
 .swiper-vertical > .swiper-pagination-bullets {
