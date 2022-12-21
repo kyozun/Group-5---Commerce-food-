@@ -2,7 +2,7 @@ var swiper_top = new Swiper('.swiper-top', {
   // Optional parameters
   direction: 'horizontal',
   slidesPerView: 1,
-  speed: 250,
+  speed: 150,
   loop: true,
   touchEventsTarget: 'container',
   grabCursor: true,
@@ -31,7 +31,7 @@ var swiper_falsh_sale = new Swiper('.flash-sale-slider', {
   direction: 'horizontal',
   slidesPerView: 1,
   spaceBetween: 16,
-  speed: 250,
+  speed: 150,
   loop: true,
   touchEventsTarget: 'container',
   grabCursor: false,
@@ -84,10 +84,10 @@ var swiper_best_sellers = new Swiper('.swiper-best-sellers', {
   loop: true,
   grabCursor: false,
   touchEventsTarget: 'container',
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   
   pagination: {
     el: '.swiper-pagination',
@@ -168,7 +168,7 @@ var swiper_recommendations = new Swiper('.swiper-recommendation', {
 
 var swiper_thumbs = new Swiper('.swiper-thumbs', {
   spaceBetween: 10,
-  slidesPerView: 4,
+  slidesPerView: 3,
   watchSlidesProgress: true,
  
 });
@@ -177,7 +177,7 @@ var swiper_quick_view = new Swiper('.swiper-quick-view', {
   // Optional parameters
   direction: 'horizontal',
   slidesPerView: 1,
-  speed: 250,
+  speed: 150,
   loop: true,
   touchEventsTarget: 'container',
   grabCursor: true,

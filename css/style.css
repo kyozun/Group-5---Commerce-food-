@@ -18,6 +18,14 @@ a:hover {
   color: inherit;
 }
 
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #61bd8f;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(72, 219, 59, 0.25);
+}
+
 .main-nav {
   min-height: 5.5rem;
 }
@@ -34,13 +42,13 @@ a:hover {
   transform: translate(0, 0) !important;
   border: 0;
 }
-.main-nav .categories-dropdown .dropdown-menu li {
+.main-nav .categories-dropdown .dropdown-menu div {
   padding: 0 0.5rem;
 }
-.main-nav .categories-dropdown .dropdown-menu li .dropdown-item {
+.main-nav .categories-dropdown .dropdown-menu div .dropdown-item {
   border-radius: 0.3rem !important;
 }
-.main-nav .categories-dropdown .dropdown-menu li .dropdown-item:active {
+.main-nav .categories-dropdown .dropdown-menu div .dropdown-item:active {
   background-color: #179957;
 }
 .main-nav .categories-dropdown:hover .dropdown-menu {
@@ -237,10 +245,13 @@ a:hover {
   background-color: #f6f5f8;
 }
 .flash-sale-section .flash-sale-slider .swiper-wrapper .swiper-slide .flash-sale-image {
+  width: 100%;
   box-sizing: border-box !important;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 .flash-sale-section .flash-sale-slider .swiper-wrapper .swiper-slide .flash-sale-image img {
-  background-color: #b2d4a4;
+  background-color: #ffffff;
   border-radius: 1rem;
   transition: all 0.3s ease 0s;
 }
@@ -261,6 +272,7 @@ a:hover {
   background-color: #179957;
   border: none;
   bottom: 0;
+  left: 0;
   width: 100%;
   height: 1.5rem;
   font-size: 0.9rem;
@@ -319,14 +331,14 @@ a:hover {
   transition: all 0.2s ease 0s;
 }
 .best-sellers-section .swiper-slide .single-product {
-  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
-  transition: all 0.05s ease 0s;
-  position: relative;
-  height: 24rem;
+  height: 22rem;
   text-align: center;
   position: relative;
   border-radius: 0.5rem;
   overflow: hidden;
+  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+  transition: all 0.05s ease 0s;
+  position: relative;
 }
 .best-sellers-section .swiper-slide .single-product .single-product-item-title:hover {
   color: #179957;
@@ -348,10 +360,12 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.best-sellers-section .swiper-slide .single-product .single-product-image {
+.best-sellers-section .swiper-slide .single-product .single-product-header {
   background-color: #f6f5f8;
 }
 .best-sellers-section .swiper-slide .single-product .single-product-content .stars-rating {
+  margin-top: 0.2rem;
+  margin-bottom: 0.3rem;
   font-size: 0.7rem;
   color: #fed800;
   border: #fed800;
@@ -661,7 +675,10 @@ a:hover {
   color: #fafafa;
   box-shadow: 0.5rem 0.1rem 5rem 0.3rem rgba(0, 0, 0, 0.1) !important;
 }
-.newsletter-section .newsletter-header .newsletter-icon ion-icon {
+.newsletter-section .newsletter-header .newsletter-title {
+  margin-bottom: 1rem;
+}
+.newsletter-section .newsletter-header .newsletter-icon i {
   font-size: 4rem;
 }
 .newsletter-section .form-control {
@@ -804,6 +821,10 @@ a:hover {
   color: #ffffff;
 }
 
+.modal-open {
+  overflow: inherit;
+}
+
 #quick-view-modal {
   border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -823,6 +844,7 @@ a:hover {
   background-color: #179957;
   color: white;
   border-radius: 50%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #quick-view-modal .modal-body .quick-view-content .product-type {
   color: #179957;
