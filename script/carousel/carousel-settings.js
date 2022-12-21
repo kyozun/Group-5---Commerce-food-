@@ -203,3 +203,42 @@ var swiper_quick_view = new Swiper('.swiper-quick-view', {
 
 });
 
+
+var swiper_thumbs = new Swiper('.swiper-thumbs-product', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  watchSlidesProgress: true,
+ 
+});
+
+var swiper_quick_view = new Swiper('.swiper-product', {
+  // Optional parameters
+  direction: 'horizontal',
+  slidesPerView: 1,
+  speed: 150,
+  loop: true,
+  touchEventsTarget: 'container',
+  grabCursor: true,
+  zoom: {
+    maxRatio: 2,
+  },
+  
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-product',
+    prevEl: '.swiper-button-product',
+  },
+  
+  // pagination: {
+  //   el: '.swiper-pagination-quick-view',
+  //   type: 'bullets',
+  //   clickable: true,
+  // },
+
+  thumbs: {
+    swiper: swiper_thumbs,
+  }
+
+});
+
+

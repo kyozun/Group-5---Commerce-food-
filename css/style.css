@@ -248,7 +248,7 @@ a:hover {
   width: 100%;
   box-sizing: border-box !important;
   border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 .flash-sale-section .flash-sale-slider .swiper-wrapper .swiper-slide .flash-sale-image img {
   background-color: #ffffff;
@@ -819,10 +819,6 @@ a:hover {
 .btn-group-right a:hover {
   background-color: #179957;
   color: #ffffff;
-}
-
-.modal-open {
-  overflow: inherit;
 }
 
 #quick-view-modal {
