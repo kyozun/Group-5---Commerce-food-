@@ -1,0 +1,14 @@
+:root {
+    list-style: none;
+    box-sizing: border-box;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+    border-bottom: 1px solid #ebebeb;
+    display: block;
+    font-size: 14px;
+    padding: 12px 0;
+    text-transform: capitalize;
+    color: #179957;
+}
