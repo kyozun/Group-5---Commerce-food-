@@ -1,0 +1,437 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 0.65;
+    color: #5c6c75;
+    background-color: #FFFFFF;
+}
+
+/* breadcrumb */
+
+.breadcrumb-box ol li a {
+    text-decoration: none;
+    color: #179957;
+    font-weight: 500;
+}
+.breadcrumb-box ol li a:hover {
+    color: green;
+}
+
+/* breadcrumb */
+
+/*section-title*/
+
+.title {
+    color: #18113C;
+}
+.section-title-text a {
+    text-decoration: none;
+    color: #179957;
+}
+.section-title-text a:hover {
+    color: green;
+}
+
+/*section-title*/
+
+/**/
+
+.accordion-item h2 button i {
+    font-size: 18px;
+    color: #5c6c75;
+}
+.accordion-item h2 button h5 {
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 19px;
+}
+.accordion-button h5:hover {
+    color: green;
+    transition: 200ms;
+}
+.accordion-button::after {
+    visibility: hidden;
+}
+.product {
+    display: flex;
+}
+.num-product, .money-product-1 {
+    padding-top: 12px;
+}
+.table-content {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 0 4px #dee2e6;
+}
+.subtotal-li {
+    list-style: none;
+}
+.subtotal-li li span {
+    float: right;
+}
+
+.accordion-button:not(.collapse) {
+    background: #FFFFFF!important;
+    color: black!important;
+}
+.accordion-button:focus {
+    box-shadow: inherit!important;
+}
+.btn {
+    font-weight: 500!important;
+    border: 1px #179957 solid!important;
+    padding: 4px 9px!important;
+    font-size: 12px!important;
+    color: #179957!important;
+}
+.btn:hover {
+    background: #179957!important;
+    color: #FFFFFF!important;
+}
+.pt-center {
+    padding-top: 13px;
+    padding-left: 120px!important;
+}
+.btn-close {
+    font-size: 14px;
+}
+.btn-close:focus {
+    box-shadow: inherit!important;
+}
+.bd {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+.bd h6 {
+    font-size: 15px;
+}
+.bd p {
+    font-size: 14px;
+}
+.textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px 16px;
+    outline: none;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.accordion-body p {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(92, 108, 117, 0.7);
+}
+.service i {
+    font-size: 12px;
+    margin-top: 2px;
+}
+.name-product p  {
+    font-size: 14.5px;
+}
+.text p, .text span {
+    font-size: 14.5px;
+}
+.num {
+    font-size: 12.5px;
+    font-weight: 500;
+    color: #5c6c75;
+}
+.num-product {
+    color: #5c6c75;
+}
+small del {
+    font-size: 13px;
+    padding-left: 3px;
+}
+
+/**/
+.text-content {
+    font-size: 13px;
+    font-weight: 400;
+    color: #5c6c75;
+}
+/**/
+.modal-form .input-text input {
+    border: 1px solid rgba(92, 108, 117, 0.37);
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    width: 100%;
+}
+.modal-form select {
+    border: 1px solid rgba(92, 108, 117, 0.37)!important;
+    border-radius: 8px!important;
+    outline: none!important;
+    box-shadow: none!important;
+    font-size: 16px!important;
+    font-weight: 500!important;
+    padding: 8px 20px!important;
+    width: 100% !important;
+    color: #5c6c75!important;
+    cursor: pointer!important;
+}
+.set-as {
+    font-size: 14px;
+}
+.text-set-as {
+    font-size: 15px;
+    color: #5c6c75;
+
+}
+.btn-cancel {
+    border: 1px solid #179957;
+    border-radius: 8px;
+    color: #179957;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 16px;
+    background-color: #FFFFFF;
+    transition: 200ms;
+}
+.btn-cancel:hover {
+    background-color: #179957;
+    color: #FFFFFF;
+}
+.btn-save {
+    border: 1px solid #179957;
+    border-radius: 8px;
+    color: #FFFFFF;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 16px;
+    background-color: #179957;
+    transition: 200ms;
+}
+.btn-save:hover {
+    background-color: green;
+}
+.bd-pm {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+.place-order {
+    float: right;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #179957;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.place-order:hover {
+    background-color: green;
+}
+.c-num {
+    width: 97%;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 0px 8px 15px;
+    outline: none;
+}
+.n-on-c {
+    width: 27.75rem;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 0px 8px 15px;
+    outline: none;
+}
+.date {
+    width: 99%!important;
+    border: 1px solid #dee2e6!important;
+    border-radius: 8px!important;
+    font-size: 15px!important;
+    font-weight: 500!important;
+    outline: none!important;
+    padding-bottom: 10px!important;
+    box-shadow: none!important;
+}
+.cvv-code {
+    width: 157px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 8px 0px 8px 15px;
+    outline: none;
+}
+.text-fs h6 {
+    font-size: 15px;
+}
+.text-fs p {
+    font-size: 12px;
+    font-weight: 500;
+}
+.text-fe {
+    font-size: 14px;
+    font-weight: 500;
+}
+/**/
+.remove-flex {
+    display: flex;
+}
+
+.margin-r {
+    margin-right: 24px;
+}
+.bd-radio {
+    border-top: 1px solid #dee2e6;
+}
+.Paid {
+    font-size: 14px;
+    padding: 0px 6px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 0, 0, 0.73);
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-left: 5rem;
+}
+.choose {
+    font-size: 14px;
+    border: 1px solid #5c6c75;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #5c6c75;
+    font-weight: 500;
+    margin-left: 7rem;
+}
+.li-group {
+    border-bottom: 1px solid #dee2e6;
+}
+.paid {
+    background-color: rgba(255, 0, 0, 0.69);
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 2px 4px;
+}
+.free {
+    background-color: #179957;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 2px 4px;
+}
+.nav-item {
+    border: none;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-weight: 500;
+    background-color: rgba(24, 77, 71, 0.48);
+}
+.nav-link {
+   color: #FFFFFF!important;
+}
+.nav-pills {
+    --bs-nav-pills-link-active-bg: #179957!important;
+}
+.nav-link:hover {
+    background-color: #179957!important;
+}
+.form-check-input {
+    cursor: pointer;
+}
+.form-check-input:checked {
+    background-color: #179957!important;
+    border-color: #179957!important;
+}
+.form-check-input:focus {
+    box-shadow: 0 0 0 3px rgba(23, 153, 87, 0.27) !important;
+}
+/**/
+
+/**/
+@media screen and (max-width: 1399px) {
+    .n-on-c {
+        width: 20.25rem;
+    }
+    .margin-r {
+        margin-right: 14.5px;
+    }
+    .btn-modal {
+        padding-left: 100px!important;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .n-on-c {
+        width: 100%;
+    }
+    .margin-r {
+        margin-right: 5px;
+    }
+    .btn-modal {
+        padding-left: 50px!important;
+    }
+}
+
+@media  screen and  (max-width: 993px){
+    .n-on-c {
+        width: 18rem;
+    }
+}
+@media screen and (max-width: 991px) {
+    .margin-r {
+        margin-right: 70px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .margin-l {
+        margin-left: 20px;
+    }
+    .remove-flex {
+        all: revert;
+    }
+    .n-on-c {
+        width: 99%;
+    }
+    .date {
+        width: 99%;
+    }
+    .cvv-code {
+        width: 97%;
+    }
+    .nav-item {
+        margin-bottom: 10px;
+    }
+    .btn-modal {
+        padding-left: 30px!important;
+    }
+}
+@media  screen and (max-width: 768px) {
+    .margin-r {
+        margin-right: 40px;
+    }
+}
+@media screen and (max-width: 510px) {
+    .margin-r {
+        margin-right: 30px;
+    }
+    .btn-modal {
+        padding-left: 25px!important;
+    }
+}
+
+
+/**/

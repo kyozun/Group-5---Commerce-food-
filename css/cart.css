@@ -1,0 +1,224 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #5c6c75;
+    background-color: #FFFFFF;
+}
+
+/* breadcrumb */
+
+.breadcrumb-box ol li a {
+    text-decoration: none;
+    color: #179957;
+    font-weight: 500;
+}
+.breadcrumb-box ol li a:hover {
+    color: green;
+    transition: all 200ms;
+}
+
+/* breadcrumb */
+
+/*section-title*/
+
+.title {
+    color: #18113C;
+}
+
+/*section-title*/
+
+/*section-content*/
+
+.first-time-gift p {
+    color: #831d2e;
+    font-weight: 500;
+    border: 1px solid #f4c1c1;
+    border-radius: 8px;
+    background-color: #f8d6d6;
+}
+.first-time-gift p a {
+    text-decoration: none;
+    color: #18113C;
+}
+.product {
+    border-top: 1px solid #dfe2e1;
+    border-bottom: 1px solid #dfe2e1;
+}
+.product-information h3 a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #18113C;
+    font-weight: 500;
+}
+.product-information p {
+    font-size: 13px;
+    font-weight: 500;
+}
+.remove a {
+    color: #5c6c75;
+    text-decoration: none;
+}
+.remove a:hover {
+    color: #179957;
+    transition: all 200ms;
+}
+.quantity {
+    display: flex;
+}
+.dec {
+    padding: 0 10px 0 10px;
+    border: 1px solid #d1f5ea;
+    cursor: pointer;
+}
+.int {
+    padding: 0 8px 0 8px;
+    border: 1px solid #d1f5ea;
+    cursor: pointer;
+}
+.num {
+    padding: 0 10px 0 10px;
+    border-top: 1px solid #d1f5ea;
+    border-bottom: 1px solid #d1f5ea;
+}
+.dec:hover, .int:hover {
+    background-color: #d1f5ea;
+    transition: all 400ms;
+}
+.product-nobt {
+    border-bottom: 1px solid #dfe2e1;
+}
+.cost {
+    padding-left: 8px;
+    font-size: 13px;
+}
+.btn-shop {
+    background-color: #179957;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-weight: bold;
+    border: none;
+}
+.btn-shop:hover {
+    background-color: rgba(23, 153, 87, 0.92);
+    transition: all 300ms;
+}
+.btn-update {
+    background-color: #21313c;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-weight: bold;
+    border: none;
+    float: right;
+}
+.btn-update:hover {
+    background-color: #3d4f58;
+    transition: all 300ms;
+}
+
+.content {
+    border: 1px solid #dfe2e1;
+    border-radius: 8px;
+    padding: 27px 24px;
+}
+.content-product {
+    padding-bottom: 85px;
+}
+.text-title h4 {
+    color: #18113C;
+    font-weight: 600;
+    font-size: 18px;
+}
+.tab-li ul li {
+    list-style: none;
+    padding: 6px 20px;
+    color: #18113C;
+    font-size: 14px;
+    font-weight: 500;
+}
+.tab-li ul li span {
+    float: right;
+}
+.li-1 {
+    border: 1px solid #dfe2e1;
+}
+.li-2 {
+    border-left: 1px solid #dfe2e1;
+    border-right: 1px solid #dfe2e1;
+}
+.li-3 {
+    border: 1px solid #dfe2e1;
+}
+.Gift-card h4 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #18113C;
+}
+.Gift-card input {
+    margin-top: 10px;
+    width: 100%;
+    height: 38px;
+    padding-left: 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #dfe2e1;
+    outline: none;
+}
+.btn-redeem button {
+    font-size: 14px;
+    margin-top: 10px;
+    width: 100%;
+    height: 38px;
+    border-radius: 8px;
+    color: #18113C;
+    background-color: #FFFFFF;
+    border: 1px solid #18113C;
+}
+.btn-redeem button:hover {
+    background-color: #001e2b;
+    color: #FFFFFF;
+    transition: all 250ms;
+}
+.btn-checkout button {
+    margin-top: 20px;
+    width: 100%;
+    height: 43px;
+    border-radius: 8px;
+    background-color: #179957;
+    border: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn-checkout button:hover {
+    background-color: rgba(23, 153, 87, 0.92);
+    transition: all 250ms;
+}
+.btn-checkout p {
+    margin-top: 10px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500;
+}
+.btn-checkout p a {
+    text-decoration: none;
+    color: #179957;
+}
+.btn-checkout p a:hover {
+    color: rgb(0, 128, 0);
+    transition: all 250ms;
+}
+/*section-content*/
+
